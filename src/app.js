@@ -1,11 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const displayProps_1 = require("./displayProps");
-const Rectangle_1 = require("./Rectangle");
-const Square_1 = require("./Square");
-const Container_1 = require("./Container");
-const rectangle = new Rectangle_1.Rectangle(3, 4);
-const square = new Square_1.Square(10);
-const container = new Container_1.Container([rectangle, square]);
-(0, displayProps_1.displaySquarePerimeter)(container);
+const CipherRightShift_1 = require("./CipherRightShift");
+const CipherLeftShift_1 = require("./CipherLeftShift");
+const displayCipherDecipher_1 = require("./displayCipherDecipher");
+const cipherRightShift = new CipherRightShift_1.CipherRightShift(10);
+const cipherLeftShift = new CipherLeftShift_1.CipherLeftShift(10);
+(0, displayCipherDecipher_1.displayCipherDecipher)(cipherRightShift, "abcd");
+(0, displayCipherDecipher_1.displayCipherDecipher)(cipherLeftShift, "mnop");
 //# sourceMappingURL=app.js.map
